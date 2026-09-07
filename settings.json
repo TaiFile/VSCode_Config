@@ -1,29 +1,31 @@
 {
+    // ─────────────────────────────────────────────────────────────
+    //  Claude Code
+    // ─────────────────────────────────────────────────────────────
+    "claudeCode.preferredLocation": "panel",
+
+    // ─────────────────────────────────────────────────────────────
+    //  Aparência (suas preferências)
+    // ─────────────────────────────────────────────────────────────
     "workbench.colorTheme": "Min Dark",
-    "debug.terminal.clearBeforeReusing": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "security.workspace.trust.untrustedFiles": "open",
     "workbench.iconTheme": "symbols",
-    "explorer.confirmDragAndDrop": false,
     "symbols.hidesExplorerArrows": false,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.8,
-    "editor.rulers":[80,120],
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.renderLineHighlight": "gutter",
-    "editor.fontLigatures": true,
     "workbench.editor.labelFormat": "short",
-    "explorer.compactFolders": false,
-    "editor.semanticHighlighting.enabled": false,
-    "breadcrumbs.enabled": false, 
-    "workbench.activityBar.location": "top",
+    "workbench.activityBar.location": "default",
+    "workbench.statusBar.visible": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "breadcrumbs.enabled": false,
+    "window.commandCenter": false,
     "window.customTitleBarVisibility": "auto",
+    "window.titleBarStyle": "custom",
+    "window.newWindowProfile": "Default",
+    "editor.renderLineHighlight": "gutter",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "visible",
-    "window.commandCenter": false,
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
     "apc.electron": {
-        "titleBarStyle": "hiddenInset",
+        "titleBarStyle": "hiddenInset"
     },
     "apc.header": {
         "height": 36
@@ -31,9 +33,282 @@
     "apc.listRow": {
         "height": 24
     },
-    "window.titleBarStyle": "custom",
+
+    // ─────────────────────────────────────────────────────────────
+    //  Fonte / tipografia
+    // ─────────────────────────────────────────────────────────────
+    "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Editor — comportamento
+    // ─────────────────────────────────────────────────────────────
+    "editor.rulers": [80, 120],
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "off",
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggest.preview": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.parameterHints.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.find.seedSearchStringFromSelection": "selection",
+
+    // ─────────────────────────────────────────────────────────────
+    //  Formatação / imports ao salvar
+    // ─────────────────────────────────────────────────────────────
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "never",
+        "source.addMissingImports": "explicit"
+    },
+    "prettier.requireConfig": true,
+    "eslint.run": "onType",
+    "eslint.format.enable": false,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Arquivos
+    // ─────────────────────────────────────────────────────────────
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.eol": "\n",
+    "files.associations": {
+        "*.env.*": "dotenv",
+        "*.jsonc": "jsonc",
+        "Dockerfile.*": "dockerfile"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": false
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true,
+        "**/target/**": true,
+        "**/build/**": true,
+        "**/dist/**": true,
+        "**/bin/**": true,
+        "**/obj/**": true,
+        "**/.gradle/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/target": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/coverage": true,
+        "**/*.lock": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/yarn.lock": true
+    },
+    "search.smartCase": true,
+    "search.useIgnoreFiles": true,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Explorer
+    // ─────────────────────────────────────────────────────────────
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": true,
+    "explorer.compactFolders": false,
     "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js, ${capture}.d.ts, ${capture}.test.ts, ${capture}.spec.ts",
+        "*.tsx": "${capture}.ts, ${capture}.test.tsx, ${capture}.spec.tsx, ${capture}.module.css, ${capture}.module.scss",
+        "*.jsx": "${capture}.js, ${capture}.test.jsx, ${capture}.spec.jsx",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.test.js, ${capture}.spec.js",
+        "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, .npmrc, .nvmrc, .yarnrc*, tsconfig*.json, jsconfig*.json, .eslintrc*, eslint.config.*, .prettierrc*, prettier.config.*, .editorconfig, vite.config.*, vitest.config.*, jest.config.*, nest-cli.json",
+        "*.csproj": "*.user, appsettings*.json, packages.config, *.ruleset, .editorconfig",
+        "pom.xml": "mvnw, mvnw.cmd, .mvn, checkstyle.xml",
+        "build.gradle*": "gradlew, gradlew.bat, gradle.properties, settings.gradle*, gradle",
+        "Dockerfile": "Dockerfile.*, .dockerignore, docker-compose.*, compose.*",
+        "*.md": "${capture}.*.md"
+    },
+
+    // ─────────────────────────────────────────────────────────────
+    //  Editor / abas de trabalho
+    // ─────────────────────────────────────────────────────────────
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 12,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.tabActionCloseVisibility": true,
+    "workbench.tree.indent": 14,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.settings.editor": "json",
+
+    // ─────────────────────────────────────────────────────────────
+    //  Git / Source control
+    // ─────────────────────────────────────────────────────────────
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
+    "git.branchProtection": ["main", "master", "develop"],
+    "git.pruneOnFetch": true,
+    "git.fetchOnPull": true,
+    "git.mergeEditor": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "scm.defaultViewMode": "tree",
+
+    // ─────────────────────────────────────────────────────────────
+    //  Terminal integrado
+    // ─────────────────────────────────────────────────────────────
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerds Font",
-    "workbench.statusBar.visible": true,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', 'Cascadia Code', monospace",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "debug.terminal.clearBeforeReusing": true,
+    "debug.toolBarLocation": "docked",
+    "debug.inlineValues": "auto",
+    "debug.showBreakpointsInOverviewRuler": true,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Segurança / telemetria
+    // ─────────────────────────────────────────────────────────────
+    "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "error",
+    "redhat.telemetry.enabled": false,
+    "update.mode": "start",
+    "extensions.autoUpdate": "on",
+    "extensions.ignoreRecommendations": false,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Emmet
+    // ─────────────────────────────────────────────────────────────
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+
+    // ─────────────────────────────────────────────────────────────
+    //  JavaScript / TypeScript / React
+    // ─────────────────────────────────────────────────────────────
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "js/ts.preferences.importModuleSpecifier": "non-relative",
+    "js/ts.tsserver.maxMemory": 4096,
+    "js/ts.preferences.preferTypeOnlyAutoImports": true,
+    "js/ts.suggest.autoImports": true,
+    "js/ts.inlayHints.parameterNames.enabled": "literals",
+    "js/ts.inlayHints.functionLikeReturnTypes.enabled": false,
+    "js/ts.implicitProjectConfig.checkJs": true,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Java / Spring Boot
+    // ─────────────────────────────────────────────────────────────
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.saveActions.organizeImports": true,
+    "java.sources.organizeImports.starThreshold": 99,
+    "java.sources.organizeImports.staticStarThreshold": 99,
+    "java.inlayHints.parameterNames.enabled": "literals",
+
+    // ─────────────────────────────────────────────────────────────
+    //  Kotlin
+    // ─────────────────────────────────────────────────────────────
+    "kotlin.languageServer.enabled": true,
+    "kotlin.compiler.jvm.target": "17",
+
+    // ─────────────────────────────────────────────────────────────
+    //  .NET / C#
+    // ─────────────────────────────────────────────────────────────
+    "dotnet.defaultSolution": "disable",
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "dotnet.formatting.organizeImportsOnFormat": true,
+    "csharp.inlayHints.enableInlayHintsForParameters": true,
+    "csharp.semanticHighlighting.enabled": true,
+
+    // ─────────────────────────────────────────────────────────────
+    //  Spell checker
+    // ─────────────────────────────────────────────────────────────
+    "cSpell.language": "en,pt,pt_BR",
+    "cSpell.enabledFileTypes": {
+        "dockerfile": true,
+        "properties": true,
+        "yaml": true
+    },
+
+    // ─────────────────────────────────────────────────────────────
+    //  Formatadores por linguagem
+    // ─────────────────────────────────────────────────────────────
+    "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.wordWrap": "on",
+        "files.trimTrailingWhitespace": false
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.tabSize": 4
+    },
+    "[kotlin]": {
+        "editor.tabSize": 4
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.tabSize": 4
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml",
+        "editor.tabSize": 4
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+    }
 }
