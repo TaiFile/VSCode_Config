@@ -2,6 +2,8 @@
 
 Instruções para aplicar as configurações de aparência e editor abaixo.
 
+> Skills/plugins do Claude Code: veja [`claude/README.md`](claude/README.md).
+
 ## 1. Onde fica o arquivo
 
 As suas configurações pessoais vão no **`settings.json` do usuário**, e **não** no
