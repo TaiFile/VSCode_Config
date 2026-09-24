@@ -1,11 +1,49 @@
 {
     // ─────────────────────────────────────────────────────────────
+    //  Cursor — específico (preservado do seu settings atual)
+    // ─────────────────────────────────────────────────────────────
+    "cursor.composer.queueMessageDefaultBehavior": "steer",
+    "typescript.experimental.useTsgo": true,
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "interface": { "foreground": "#b8ce82" },
+            "namespace": "#cccccc",
+            "enum": "#b8ce82",
+            "struct": { "foreground": "#86C691" },
+            "inactive": { "foreground": "#6A6A6A" }
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "entity.name.type.interface.cs",
+                "settings": { "foreground": "#b8ce82" }
+            },
+            {
+                "scope": "entity.name.type.enum.cs",
+                "settings": { "foreground": "#b8ce82" }
+            },
+            {
+                "scope": "entity.name.type.struct.cs",
+                "settings": { "foreground": "#86C691" }
+            },
+            {
+                "scope": "variable.other.enummember.cs",
+                "settings": { "foreground": "#4FC1FF" }
+            }
+        ]
+    },
+
+    // ─────────────────────────────────────────────────────────────
     //  Claude Code
     // ─────────────────────────────────────────────────────────────
     "claudeCode.preferredLocation": "panel",
 
     // ─────────────────────────────────────────────────────────────
     //  Aparência (suas preferências)
+    //  Requer extensões: miguelsolorio.min-theme + miguelsolorio.symbols + drcika.apc-extension
     // ─────────────────────────────────────────────────────────────
     "workbench.colorTheme": "Min Dark",
     "workbench.iconTheme": "symbols",
@@ -209,9 +247,8 @@
     "security.workspace.trust.untrustedFiles": "open",
     "telemetry.telemetryLevel": "error",
     "redhat.telemetry.enabled": false,
-    "update.mode": "start",
     "extensions.autoUpdate": "on",
-    "extensions.ignoreRecommendations": false,
+    "extensions.ignoreRecommendations": true,
 
     // ─────────────────────────────────────────────────────────────
     //  Emmet
@@ -224,14 +261,21 @@
 
     // ─────────────────────────────────────────────────────────────
     //  JavaScript / TypeScript / React
+    //  (chaves "js/ts.*" do seu config não são válidas — expandidas aqui
+    //   para javascript.* / typescript.*, que é o que o editor lê)
     // ─────────────────────────────────────────────────────────────
-    "js/ts.updateImportsOnFileMove.enabled": "always",
-    "js/ts.preferences.importModuleSpecifier": "non-relative",
-    "js/ts.tsserver.maxMemory": 4096,
-    "js/ts.preferences.preferTypeOnlyAutoImports": true,
-    "js/ts.suggest.autoImports": true,
-    "js/ts.inlayHints.parameterNames.enabled": "literals",
-    "js/ts.inlayHints.functionLikeReturnTypes.enabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.tsserver.maxMemory": 4096,
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "javascript.inlayHints.parameterNames.enabled": "literals",
+    "typescript.inlayHints.parameterNames.enabled": "literals",
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
     "js/ts.implicitProjectConfig.checkJs": true,
 
     // ─────────────────────────────────────────────────────────────
