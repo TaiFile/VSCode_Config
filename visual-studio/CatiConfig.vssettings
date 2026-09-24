@@ -1,0 +1,45 @@
+<UserSettings>
+  <ApplicationIdentity version="17.0" />
+  <ToolsOptions>
+    <ToolsOptionsCategory name="Environment" RegisteredName="Environment">
+
+      <!--
+        Fonte do editor de código.
+        Equivale a "editor.fontFamily" / "editor.fontSize" do VSCode.
+        FontSize aqui é em PONTOS (pt), não pixels. 11pt ~= 14px do VSCode.
+        CharSet="1" = DEFAULT_CHARSET.
+        As ligatures do JetBrains Mono são renderizadas automaticamente pelo
+        VS 2022 (17.x) quando a fonte tem ligatures — nao ha chave separada.
+      -->
+      <ToolsOptionsSubCategory name="FontsAndColors" RegisteredName="FontsAndColors" PackageName="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}">
+        <FontsAndColors Version="2.0">
+          <Theme Id="{1ded0138-47ce-435e-84ef-9ec1f439b749}" />
+          <Categories>
+            <Category GUID="{A27B4E24-A735-4D1D-B8E7-9716E1E3D8E0}"
+                      FontName="JetBrains Mono"
+                      FontSize="11"
+                      CharSet="1"
+                      FontIsDefault="No" />
+          </Categories>
+        </FontsAndColors>
+      </ToolsOptionsSubCategory>
+
+      <!--
+        Fonte do terminal / janelas de output.
+        Categoria "Terminal" do Fonts and Colors.
+      -->
+      <ToolsOptionsSubCategory name="FontsAndColors" RegisteredName="FontsAndColors" PackageName="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}">
+        <FontsAndColors Version="2.0">
+          <Categories>
+            <Category GUID="{9973EFDF-317D-431C-8BC1-5E88CBFD4F7F}"
+                      FontName="JetBrainsMono Nerd Font"
+                      FontSize="11"
+                      CharSet="1"
+                      FontIsDefault="No" />
+          </Categories>
+        </FontsAndColors>
+      </ToolsOptionsSubCategory>
+
+    </ToolsOptionsCategory>
+  </ToolsOptions>
+</UserSettings>
