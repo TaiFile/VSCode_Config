@@ -1,6 +1,6 @@
 # Configurações do Visual Studio (IDE)
 
-Equivalente do `../settings.json` (VSCode) para o **Visual Studio 2022**
+Equivalente do `../vscode/settings.json` (VSCode) para o **Visual Studio 2022**
 (Windows). Não é uma tradução 1:1 — o Visual Studio é outro produto:
 
 - Não existe `settings.json` do usuário. A config é por **GUI**
@@ -12,7 +12,7 @@ Equivalente do `../settings.json` (VSCode) para o **Visual Studio 2022**
 
 ## 1. Aplicar o `.vssettings`
 
-O arquivo [`CatiConfig.vssettings`](./CatiConfig.vssettings) define **só a fonte**
+O arquivo [`fonts.vssettings`](./fonts.vssettings) define **só a fonte**
 do editor e do terminal (é a parte que importa com segurança sem sobrescrever
 suas cores).
 
@@ -21,7 +21,7 @@ suas cores).
    - **JetBrainsMono Nerd Font** — <https://www.nerdfonts.com/font-downloads>
 2. `Tools > Import and Export Settings… > Import selected environment settings`
 3. Escolha **não** salvar backup (ou salve, tanto faz) → `Browse` →
-   `CatiConfig.vssettings` → marque tudo → `Finish`.
+   `fonts.vssettings` → marque tudo → `Finish`.
 4. Reinicie o Visual Studio.
 
 > Se o nome exato da Nerd Font instalada for outro (ex.: `JetBrainsMono NF`),

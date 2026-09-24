@@ -3,7 +3,7 @@
 > **Leia primeiro.** O Visual Studio (IDE) só cobre bem **.NET/C#** e **C++**.
 > Para **Java + Spring**, **Kotlin + Spring**, **Node.js** e **React** ele não
 > tem suporte real — para essas stacks continue no **VSCode** (ver
-> `../extensions.md`) ou **IntelliJ IDEA**. A lista abaixo assume que você vai
+> `../vscode/extensions.md`) ou **IntelliJ IDEA**. A lista abaixo assume que você vai
 > usar o Visual Studio para a parte **.NET/C#**.
 
 Instale por `Extensions > Manage Extensions` (busca no Marketplace) ou baixando
@@ -117,7 +117,7 @@ Quase tudo nativo — não precisa de extensão:
 ## Resumo: o mínimo pra começar
 
 1. Fontes JetBrains Mono + Nerd Font (Windows)
-2. Importar `CatiConfig.vssettings`
+2. Importar `fonts.vssettings`
 3. `.editorconfig` na raiz do repo
 4. Instalar: `PaulHarrington.EditorGuidelines`, `MadsKristensen.FileIcons`,
    `God0nlyKnows.NightOwl`, `TomasRestrepo.Viasfora`,
